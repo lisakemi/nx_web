@@ -1,0 +1,8 @@
+{
+  "name": "Nanomax Pre and Primary School",
+  "description": "Official website for Nanomax Pre and Primary School in Dar es Salaam, Tanzania. Features admissions, academics, gallery, school news, and campus details.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

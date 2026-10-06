@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Circular Path for Curved Text at Top -->
+    <!-- Center is 300, 300. Radius ~ 230 -->
+    <path id="textArcTop" d="M 90,300 A 210,210 0 1,1 510,300" fill="none" />
+    
+    <!-- Spherical 3D Gradients -->
+    <radialGradient id="burgundySphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="40%" stop-color="#b91c1c" />
+      <stop offset="85%" stop-color="#700d1c" />
+      <stop offset="100%" stop-color="#45050e" />
+    </radialGradient>
+    
+    <radialGradient id="skySphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#bae6fd" />
+      <stop offset="45%" stop-color="#38bdf8" />
+      <stop offset="85%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#0369a1" />
+    </radialGradient>
+
+    <radialGradient id="smallBurgundySphere" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="70%" stop-color="#831221" />
+      <stop offset="100%" stop-color="#4c0510" />
+    </radialGradient>
+
+    <!-- Gloss highlight for 3D sphere -->
+    <linearGradient id="glossGrad" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle white -->
+  <circle cx="300" cy="300" r="290" fill="#ffffff" stroke="#7b1220" stroke-width="5" />
+  
+  <!-- Outer thick burgundy ring -->
+  <circle cx="300" cy="300" r="275" fill="none" stroke="#7b1220" stroke-width="9" />
+  <circle cx="300" cy="300" r="268" fill="none" stroke="#f1f5f9" stroke-width="1.5" />
+  
+  <!-- Inner subtle guideline circle -->
+  <circle cx="300" cy="300" r="162" fill="none" stroke="#881324" stroke-width="1.5" opacity="0.3" />
+
+  <!-- Arched Upper Text: NANOMAX PRE - & PRIMARY SCHOOL -->
+  <text fill="#0f172a" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="28.5" letter-spacing="4">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      NANOMAX PRE - &amp; PRIMARY SCHOOL
+    </textPath>
+  </text>
+
+  <!-- ================= CENTER EMBLEM: FOUNTAIN PEN NIB & OPEN BOOK ================= -->
+  <g id="penAndBook" transform="translate(0, -10)">
+    <!-- Top Pen Holder & Nib -->
+    <!-- Pen handle / collar -->
+    <rect x="286" y="112" width="28" height="6" rx="2" fill="#0f172a" />
+    <rect x="289" y="118" width="22" height="10" fill="#0f172a" />
+    <!-- Nib shape pointing downward -->
+    <path d="M 289,128 C 289,142 277,156 288,178 L 300,195 L 312,178 C 323,156 311,142 311,128 Z" fill="#0f172a" />
+    <!-- Nib breather hole and slit -->
+    <circle cx="300" cy="162" r="3.5" fill="#ffffff" />
+    <line x1="300" y1="165" x2="300" y2="195" stroke="#ffffff" stroke-width="2.5" />
+
+    <!-- Open Book Below Nib -->
+    <!-- Outer burgundy pages/wings -->
+    <!-- Left Wing Top Page -->
+    <path d="M 297,196 C 265,178 225,176 195,190 C 205,214 250,234 297,238 Z" fill="#841424" />
+    <!-- Right Wing Top Page -->
+    <path d="M 303,196 C 335,178 375,176 405,190 C 395,214 350,234 303,238 Z" fill="#841424" />
+    
+    <!-- White divider line between top and middle page layers -->
+    <path d="M 197,192 C 227,178 266,180 297,198" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+    <path d="M 403,192 C 373,178 334,180 303,198" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Left Wing Middle/Lower Page -->
+    <path d="M 297,222 C 260,205 220,206 188,226 C 202,246 250,256 297,258 Z" fill="#841424" />
+    <!-- Right Wing Middle/Lower Page -->
+    <path d="M 303,222 C 340,205 380,206 412,226 C 398,246 350,256 303,258 Z" fill="#841424" />
+
+    <!-- Base / Book Stand horizontal bar -->
+    <path d="M 200,266 L 400,266" stroke="#841424" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- ================= ATOMIC / PLANETARY ORBITS ================= -->
+  <!-- Burgundy Elliptical Loop (tilted slightly downwards to right) -->
+  <g id="burgundyOrbit" transform="rotate(-7, 300, 360)">
+    <!-- Back half of orbit -->
+    <path d="M 110,360 A 200 48 0 0 1 490,360" fill="none" stroke="#841424" stroke-width="16" stroke-linecap="round" />
+    <!-- Front half of orbit -->
+    <path d="M 490,360 A 200 48 0 0 1 110,360" fill="none" stroke="#841424" stroke-width="18" stroke-linecap="round" />
+    
+    <!-- Large Burgundy Spherical Nucleus / Planet (on left side) -->
+    <circle cx="195" cy="336" r="44" fill="url(#burgundySphere)" filter="drop-shadow(2px 5px 6px rgba(0,0,0,0.35))" />
+    <!-- Gloss highlight arc on big burgundy sphere -->
+    <path d="M 180,305 C 190,303 205,307 210,317 C 206,323 189,320 178,312 Z" fill="#ffffff" opacity="0.8" />
+    
+    <!-- Small Burgundy Satellite Sphere on lower loop -->
+    <circle cx="132" cy="406" r="22" fill="url(#smallBurgundySphere)" />
+  </g>
+
+  <!-- Sky-Blue Elliptical Loop (crossing symmetrically) -->
+  <g id="skyBlueOrbit" transform="rotate(7, 300, 368)">
+    <!-- Back/Upper stroke -->
+    <path d="M 130,368 A 195 46 0 0 1 485,368" fill="none" stroke="#38bdf8" stroke-width="12" stroke-linecap="round" />
+    <!-- Front stroke with tapered flair -->
+    <path d="M 485,368 A 195 46 0 0 1 130,368" fill="none" stroke="#38bdf8" stroke-width="14" stroke-linecap="round" />
+    
+    <!-- Sky-Blue Medium Satellite Sphere (upper-right) -->
+    <circle cx="360" cy="338" r="22" fill="url(#skySphere)" filter="drop-shadow(0px 3px 5px rgba(2,132,199,0.3))" />
+    
+    <!-- Sky-Blue Sphere (lower-right) -->
+    <circle cx="440" cy="408" r="25" fill="url(#skySphere)" filter="drop-shadow(0px 3px 5px rgba(2,132,199,0.3))" />
+  </g>
+
+  <!-- ================= MOTTO TEXT ================= -->
+  <!-- "Achieving Excellence Together" -->
+  <text x="300" y="372" text-anchor="middle" font-family="'Outfit', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" font-weight="900" font-size="21" fill="#0f172a" letter-spacing="0.5">
+    Achieving Excellence Together
+  </text>
+  
+  <!-- Subtle inner edge burgundy decorative rim -->
+  <circle cx="300" cy="300" r="260" fill="none" stroke="#841424" stroke-width="1.8" opacity="0.6" />
+</svg>
